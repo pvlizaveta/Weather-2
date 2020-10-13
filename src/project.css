@@ -1,0 +1,52 @@
+body {
+  text-align: center;
+  background-image: linear-gradient(to top, #fbc2eb, #a6c1ee 100%);
+  background-size: 600px;
+  font-family: "Raleway", sans-serif;
+  margin: auto;
+}
+form {
+  margin-top: 30px;
+}
+input {
+  size: 30px;
+}
+.box {
+  position: relative;
+  width: 400px;
+  border: 5px solid white;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+h5 {
+  display: block;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+h2 {
+  display: block;
+  text-align: left;
+  margin-left: 20px;
+}
+h1 {
+  display: block;
+  font-size: 70px;
+  text-align: right;
+  margin-right: 20px;
+}
+p {
+  text-align: left;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.row {
+  margin-top: 190px;
+  margin-bottom: 50px;
+  color: gray;
+  font-size: 20px;
+  border: 5px solid white;
+  background-color: white;
+}
