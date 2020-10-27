@@ -52,14 +52,15 @@ p {
   margin-left: 20px;
   font-size: 20px;
 }
+h4 {
+  font-size: 20px;
+}
 
 i {
-  font-size: 30px;
-  padding: 10px;
+  font-size: 35px;
 }
 
 .tempNum {
-  display: inline;
   font-size: 15px;
 }
 
