@@ -34,7 +34,7 @@ function formatDate(date) {
     "November",
     "December",
   ];
-  return `${days[dayIndex]}, ${months[monthIndex]} ${dates} ${hours}:${minutes}`;
+  return `${days[dayIndex]}, ${months[monthIndex]} ${dates}, ${hours}:${minutes}`;
 }
 
 let dateElement = document.querySelector("h5");
@@ -74,10 +74,10 @@ function displayForecast(response) {
   forecastElement.innerHTML = null;
   let forecast = null;
 
-  for (let index = 0; index < 6; index++) {
+  for (let index = 0; index < 4; index++) {
     forecast = response.data.list[index];
     forecastElement.innerHTML += `
-  <div class="col-2">
+  <div class="col-3">
           <h4>
           ${formatHours(forecast.dt * 1000)}
           </h4>
@@ -86,7 +86,7 @@ function displayForecast(response) {
           }@2x.png">
           <div id="tempNum"><strong>${Math.round(
             forecast.main.temp_max
-          )}</strong> | ${Math.round(forecast.main.temp_min)}</div>
+          )}</strong>º
         </div>
         `;
   }
@@ -132,5 +132,40 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", convertToCelcius);
+
+function sydney(event) {
+  event.preventDefault();
+  search("Sydney");
+}
+let clickSydney = document.querySelector("#sydney");
+clickSydney.addEventListener("click", sydney);
+
+function london(event) {
+  event.preventDefault();
+  search("London");
+}
+let clickLondon = document.querySelector("#london");
+clickLondon.addEventListener("click", london);
+
+function moscow(event) {
+  event.preventDefault();
+  search("Moscow");
+}
+let clickMoscow = document.querySelector("#moscow");
+clickMoscow.addEventListener("click", moscow);
+
+function newYork(event) {
+  event.preventDefault();
+  search("New York");
+}
+let clickNewYork = document.querySelector("#newYork");
+clickNewYork.addEventListener("click", newYork);
+
+function losAngeles(event) {
+  event.preventDefault();
+  search("Los Angeles");
+}
+let clickLosAngeles = document.querySelector("#losAngeles");
+clickLosAngeles.addEventListener("click", losAngeles);
 
 search("New York");

@@ -1,22 +1,66 @@
 body {
   text-align: center;
-  margin-top: 70px;
+
   background-color: white;
   font-family: "Raleway", sans-serif;
 }
 
 .container {
-  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   border: 1px solid white;
   border-radius: 20px;
   display: block;
-  width: 600px;
-  margin-top: 10px;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1000px;
+  max-height: 800px;
 }
+
+input#city-input {
+  width: 250px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 40px;
+  border: thin;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+input#search {
+  border-radius: 20px;
+  border: 19px;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  font-size: 18px;
+  line-height: 40px;
+  padding: 1px 10px;
+}
+
+ul {
+  float: left;
+  text-align: left;
+  color: white;
+  margin-top: 47px;
+  margin-bottom: 0;
+}
+li {
+  display: inline;
+  padding: 10px;
+  font-size: 18px;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
 form {
   margin: 0;
   float: right;
+  margin-right: 20px;
 }
+
 div {
   text-align: center;
 }
@@ -26,29 +70,30 @@ input {
 }
 .box {
   position: relative;
+  text-align: left;
   float: left;
   width: 400px;
   color: white;
   display: block;
-  margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 35px;
 }
 h5 {
   display: block;
   text-align: left;
   margin-left: 20px;
-  margin-top: 20px;
 }
-h2 {
-  display: block;
+#city {
+  font-size: 40px;
   text-align: left;
-  margin-left: 20px;
+  font-weight: 700;
 }
-h1 {
-  display: block;
-  font-size: 70px;
-  text-align: right;
-  margin-right: 20px;
+.temperature {
+  font-size: 80px;
+  font-weight: 700;
+}
+#symbol {
+  display: inline;
+  font-size: 50px;
 }
 p {
   text-align: left;
@@ -66,11 +111,22 @@ img {
 .tempNum {
   font-size: 15px;
 }
-
+#hourly {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-top: 260px;
+  margin-right: 30px;
+  margin-bottom: 0;
+  text-align: right;
+  color: white;
+  border: 0;
+}
 .row {
-  margin-top: 300px;
-  float: top;
+  display: flex;
+  margin-top: 0;
   margin-bottom: 20px;
+  margin-right: 10px;
   color: gray;
   border: thin;
   padding: 20px;
@@ -78,29 +134,9 @@ img {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
-input#city-input {
-  width: 250px;
-  margin: 0 auto;
-  padding: 10px;
-  border-radius: 20px;
-  margin-top: 50px;
-  border: thin;
-  background-color: rgba(255, 255, 255, 0.25);
-  color: white;
-}
-
-input#search {
-  border-radius: 20px;
-  border: 19px;
-  background-color: #adc0ed;
-  border-color: white;
-  color: white;
-  font-size: 18px;
-  line-height: 40px;
-  padding: 1px 10px;
-}
-
 footer {
   display: block;
-  margin-left: 170px;
+  float: left;
+  margin-left: 230px;
+  position: fixed;
 }
