@@ -144,7 +144,6 @@ img {
 footer {
   display: block;
   float: left;
-  margin-left: 230px;
   position: fixed;
   color: gray;
 }
